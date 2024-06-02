@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3049e890e9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="leftpanel.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="starry.css">
+  <title>TheOnlinePopcorn</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+
+    .overcooked {
+      width: 98%;
+      text-align: center;
+    }
+
+    .overcooked img {
+      padding: 50px 0px;
+      width: 33%;
+    }
+
+    .overcooked h3 {
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    #feed {
+      color: yellowgreen;
+      text-decoration: none;
+    }
+
+    .thankyou {
+      position: sticky;
+      opacity: 0.79;
+      top: 95%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container flex bg-black ">
+
+    <!-- <left-bar></left-bar> -->
+
+    <div class="left">
+      <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="homebox">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <ul>
+              <!-- <li class=""><img src="" alt="home"></li> -->
+              <li class=""><a href="/"><img src="Theopi.png" alt="home"></a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a href="https://www.youtube.com/@TheOnlinePopcorn-movies"><i class="fa-brands fa-youtube"
+                id="youtube"></i></a>
+            <a href="https://telegram.me/TheOnlinePopcornTOP"><i class="fa-brands fa-telegram" id="telegram"></i></a>
+            <a href="https://www.tiktok.com/@theonlinepopcorn"><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="librarybox">
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <!-- <img src="wishlist.svg" alt=""> -->
+            <h2>
+              <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </h2>
+
+          </div>
+
+          <div class="categ">
+            <a href="anime">
+              <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Anime</h2>
+            </a>
+            <hr size="1">
+            <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Films</h2>
+            <hr size="1">
+            <!-- <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Genre</h2>
+            <hr size="1"> -->
+            <ul class="dropdown">
+              <li>
+                <a href="action">
+                  <h3>Action</h3>
+                </a>
+              </li>
+              <li>
+                <a href="adventure">
+                  <h3>Adventure</h3>
+                </a>
+              </li>
+              <li>
+                <a href="animated">
+                  <h3>Animated</h3>
+                </a>
+              </li>
+              <li>
+                <a href="comedy">
+                  <h3>Comedy</h3>
+                </a>
+              </li>
+              <li>
+                <a href="crime">
+                  <h3>Crime</h3>
+                </a>
+              </li>
+              <li>
+                <a href="fantasy">
+                  <h3>Fantasy</h3>
+                </a>
+              </li>
+              <li>
+                <a href="mystery">
+                  <h3>Mystery</h3>
+                </a>
+              </li>
+              <li>
+                <a href="scifi">
+                  <h3>Sci-Fi</h3>
+                </a>
+              </li>
+              <li>
+                <a href="romance">
+                  <h3>Romance</h3>
+                </a>
+              </li>
+              <li>
+                <a href="thriller">
+                  <h3>Thriller</h3>
+                </a>
+              </li>
+              <li>
+                <a href="documentary">
+                  <h3>Documentary</h3>
+                </a>
+              </li>
+            </ul>
+            <a href="series">
+              <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Series</h2>
+            </a>
+            <hr size="1">
+            <a href="tvshows">
+              <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> TV Show</h2>
+            </a>
+            <hr size="1">
+            <a href="year">
+              <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Year</h2>
+            </a>
+            <hr size="1">
+            <a href="https://theprogamerguyz.web.app/">
+              <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> TheProGamerGuy</h2>
+            </a>
+          </div>
+
+          <div class="footer">
+            <p>
+              <a href="cookies"><span>Cookies</span></a>
+              <a href="about-us"><span>About Us</span></a>
+              <a href="privacy-policy"><span>Privacy Policy</span></a>
+              <a href="terms-conditions"><span>Terms & Conditions</span></a>
+              <a href="contact-us"><span>Contact Us</span></a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="right border bg-grey rounded">
+
+      <div class="topnav">
+
+        <div class="hamburger">
+          <i class="fa-solid fa-burger fa-xl"></i>
+        </div>
+
+        <a href="/search-page">
+          <button class="submit"> <i class="fa fa-search"> </i>
+          </button>
+        </a>
+
+        <div class="topnotch">
+          <h2>TheOnlinePopcorn</h2>
+        </div>
+
+        <div class="snowfall">
+          <button id="fall" onclick="hidenshow()" style="cursor: pointer;"><img
+              src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-vector-snow-flake-icon-png-image_4946051.jpg"
+              alt=""></button>
+        </div>
+
+      </div>
+
+      <div class="maincontent">
+        <div class="overcooked">
+          <img src="overcooked.png" alt="">
+          <h1>Oops! Popcorn Overcoooked</h1> <br> <br>
+          <h3>-You can check the url & go to a different page or contact us below-</h3>
+          <a id="feed" href="contact-us">
+            <h2>Feedback</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="thankyou"><a href="/"> ©TheOnlinePopcorn🍿</a> | Made with Butter 😋- Unfiltering the L❤️VE</div>
+
+    </div>
+  </div>
+
+  <div>
+    <div id="starry" class="stars">
+      <div class="stars-01"></div>
+      <div class="stars-02"></div>
+      <div class="stars-03"></div>
+      <div class="stars-04"></div>
+    </div>
+  </div>
+
+  <script src="show.js"></script>
+  <script src="starry.js"></script>
+  <!-- <script src="assets/left.js"></script> -->
+
+
+</body>
+
+</html>

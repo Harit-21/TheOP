@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    height: -webkit-fill-available;
+}
+
+::selection {
+    background: #60dfff;
+    color: #181818;
+}
+
+#youtube:hover {
+    color: red;
+}
+
+#telegram:hover {
+    color: rgb(0, 174, 255);
+}
+
+#tiktok:hover {
+    color: black;
+}
+
+.maincontent {
+    max-height: 89vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+    margin: 18px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardContainer a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.cardContainer a:hover {
+    text-decoration: none;
+    color: #B0E3FF;
+    transition: all .2s;
+}
+
+.card {
+    width: 195px;
+    padding: 10px 7px;
+    border-radius: 11px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.card:hover {
+    background-color: #282828;
+}
+
+.card img {
+    width: 95%;
+    border-radius: 11px;
+    object-fit: contain;
+}
+
+.filmpage {
+    display: flex;
+    justify-content: center;
+}
+
+.filmpage a {
+    font-size: 15px;
+    margin: 10px 6px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.filmpage a:hover {
+    background: white;
+    color: black;
+}
+
+.filmpage .rightnow {
+    background: white;
+    color: black;
+}
+
+.mncontentpost {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 75%;
+    height: 78vh;
+    padding: 40px 5px;
+}
+
+.mncontentpost .header {
+    text-align: center;
+}
+
+.mncontentpost h1 {
+    font-family: papyrus;
+}
+
+.mncontentpost h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 10px 25px;
+}
+
+.mncontentpost h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 10px 40px;
+    padding-bottom: 50px;
+}
+
+.header img {
+    margin: 30px 0px;
+    width: 92%;
+    border-radius: 15px;
+}
+
+.theopytsec {
+    width: 98%;
+    text-align: center;
+}
+
+.theopyt {
+    border-radius: 50px;
+    padding: 10px 0px;
+    width: 90%;
+    height: 57vh;
+}
+
+.downbut {
+    width: 98%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.downbut h3 {
+    padding-bottom: 20px;
+}
+
+.downbut h3 a {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    color: black;
+    border-radius: 19px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    /* letter-spacing: 0.2em; */
+    transition: 0.5s;
+}
+
+.downbut h3 a:hover {
+    letter-spacing: 0.03em;
+    background: black;
+    color: white;
+    box-shadow: 0 0 35px #D7F3FF;
+}
+
+.season h2{
+    font-size: 2rem;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+.episode{
+    font-size: 1.3rem;
+    padding: 0px 0px;
+}
+
+.episode li {
+    padding: 15px;
+}
+
+.episode li a{
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: 0.5s;
+}
+
+.episode li a:hover{
+    letter-spacing: 0.05rem;
+    color: #00a6ff;
+}
+
+.theoptel img {
+    text-align: center;
+    width: 75%;
+    border-radius: 80px;
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.downbut a img:hover {
+    background: #181818;
+    color: white;
+    box-shadow: 0 0 35px #D7F3FF;
+}
+
+.alertsec {
+    width: 99%;
+    text-align: center;
+}
+
+.alert {
+    padding: 5px 50px;
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.6s;
+    text-align: center;
+}
+
+.alert.success h4 {
+    background-color: red;
+    font-family: 'Comic Neue', cursive;
+    font-weight: lighter;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.alert.info h4 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: lighter;
+    border-radius: 15px;
+    background: #2196F3;
+    padding: 5px 10px;
+}
+
+.alert.friendship h4 {
+    background-color: black;
+    font-family: 'Comic Neue', cursive;
+    font-weight: lighter;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+.alert.warning h4 {
+    background-color: white;
+    color: black;
+    font-family: 'Comic Neue', cursive;
+    font-weight: lighter;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+.closebtn {
+    padding: 2px 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert.warning .closebtn {
+    color: black;
+
+}
+
+.alert.warning .closebtn:hover {
+    color: deeppink;
+
+}
+
+.alert.friendship .closebtn:hover {
+    color: deeppink;
+
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.relcard {
+    overflow-x: scroll;
+    width: 95%;
+    display: flex;
+    gap: 12px;
+    margin: 5px 15px;
+}
+
+.cardpost {
+    width: 175px;
+    padding: 4px 1px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #181818;
+}
+
+.cardpost:hover {
+    background-color: #282828;
+}
+
+.cardpost img {
+    width: 165px;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.cardpost h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.relcard a {
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.hags {
+    width: 23%;
+    padding: 15px 5px;
+    overflow-wrap: break-word;
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+    text-align: center;
+}
+
+.glowbutt {
+    text-align: center;
+}
+
+#glowybutt {
+    width: auto;
+}
+
+#glowybutt path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: white;
+}
+
+#glowybutt #gyt path {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+}
+
+.glowbutt a {
+    display: inline-block;
+    padding: 15px 19px;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    /* background-color: #ff003c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    animation: glow 2s infinite alternate; */
+    transition: .5s;
+}
+
+.glowbutt a:hover {
+    border-radius: 20px;
+    background-color: #ff003c;
+    color: white;
+    box-shadow: 0 0 5px #ff003c 0 0 25px #ff003c,
+        0 0 50px #ff003c,
+        0 0 200px #ff003c;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.glowbutt a:first-child {
+    filter: hue-rotate(0deg);
+}
+
+.glowbutt a:last-child {
+    filter: hue-rotate(297deg);
+}
+
+.glowbutt a span {
+    position: absolute;
+    display: block;
+}
+
+.glowbutt a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ff003c);
+    animation: animate00 1s infinite;
+}
+
+@keyframes animate00 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.glowbutt a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff003c);
+    animation: animate01 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animate01 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.glowbutt a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #ff003c);
+    animation: animate02 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate02 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.glowbutt a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ff003c);
+    animation: animate03 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animate03 {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+.cloudword {
+    padding: 1.5px;
+    height: 46.7vh;
+    overflow: hidden;
+}
+
+.cloudword a {
+    text-decoration: none;
+    color: #608892;
+    padding: 5px;
+}
+
+.cloudword a:hover {
+    color: #60dfff;
+    text-shadow: 0px 0px 25px #fff;
+}
+
+.cloudword0 {
+    font-size: 30px;
+    rotate: 90;
+}
+
+.cloudword1 {
+    font-size: 24px;
+    rotate: 90;
+}
+
+.cloudword2 {
+    font-size: 20px;
+    rotate: 90;
+}
+
+@media (max-width: 1455px) {
+
+    .maincontent {
+        flex-wrap: nowrap;
+    }
+
+    .mncontentpost {
+        width: 83%;
+        height: 77vh;
+    }
+
+    .theopyt {
+        border-radius: 50px;
+        padding: 10px 0px;
+        width: 90%;
+        height: 45vh;
+    }
+
+    .cardContainer {
+        margin: 18px 10px;
+        display: flex;
+        gap: 19px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 195px;
+        padding: 10px 2px;
+        border-radius: 11px;
+        font-size: 17px;
+        text-align: center;
+        background-color: #181818;
+    }
+
+    .card:hover {
+        background-color: #282828;
+    }
+
+    .card img {
+        width: 90%;
+        border-radius: 11px;
+        object-fit: contain;
+    }
+
+    .cardpost {
+        width: 165px;
+    }
+
+    .cardpost img {
+        width: 150px;
+    }
+
+    .hags {
+        width: 20.8%;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        line-height: 2em;
+        /* text-align: right; */
+    }
+
+    .glowbutt a {
+        font-size: 0.85rem;
+        padding: 6px 4px;
+    }
+
+}
+
+@media (max-width: 1020px) {
+
+    .mncontentpost {
+        width: auto;
+    }
+
+    .hags {
+        display: none;
+    }
+
+    .cardContainer {
+        margin: 18px 10px;
+        display: flex;
+        gap: 19px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 175px;
+        padding: 10px 2px;
+        border-radius: 11px;
+        font-size: 17px;
+        text-align: center;
+        background-color: #181818;
+    }
+
+    .card:hover {
+        background-color: #282828;
+    }
+
+    .card img {
+        width: 90%;
+        border-radius: 11px;
+        object-fit: contain;
+    }
+
+    .relcard::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+@media (max-width: 930px) {
+    
+    .hags {
+        display: block;
+        width: 20%;
+        padding: 45px 11px;
+        color: white;
+        text-decoration: none;
+        line-height: 2em;
+        /* text-align: right; */
+    }
+
+    .glowbutt a {
+        font-size: 0.8rem;
+        padding: 6px 4px;
+    }
+
+    .theoptel img {
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .mncontentpost {
+        height: 77dvh;
+        width: auto;
+    }
+
+    .header img {
+        margin: 20px 0px;
+        width: 95%;
+    }
+
+    .hags {
+        display: none;
+    }
+
+    .theopyt {
+        border-radius: 50px;
+        padding: 10px 0px;
+        width: 90%;
+        height: 45vh;
+    }
+
+    .relcard {
+        margin: 0px 10px;
+        width: 97%;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    .maincontent {
+        flex-direction: column;
+    }
+
+    .mncontentpost {
+        text-align: center;
+        justify-content: center;
+        width: 98%;
+        height: 85vh;
+    }
+
+    .downbut {
+        width: 96vw;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .theoptel img {
+        text-align: center;
+        width: 90%;
+        border-radius: 60px;
+        padding: 0px 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .alert {
+        padding: 5px 40px;
+        font-family: 'Comic Neue', cursive;
+        color: white;
+        font-size: 20px;
+        opacity: 1;
+        transition: opacity 0.6s;
+        text-align: center;
+    }
+
+    .cardpost {
+        width: 155px;
+    }
+
+    .cardpost img {
+        width: 145px;
+    }
+
+}
+
+@media (max-width: 535px) {
+
+    .mncontentpost {
+        text-align: center;
+        justify-content: center;
+        width: 98%;
+    }
+
+    .downbut {
+        width: 98vw;
+        text-align: center;
+    }
+
+    .theoptel img {
+        text-align: center;
+        width: 90%;
+        border-radius: 60px;
+        padding: 0px 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .relcard {
+        margin: 0px 9px;
+        gap: 10px;
+    }
+
+    .cardpost h3 {
+        text-align: center;
+        padding: 7px;
+    }
+
+}
+
+@media (max-width: 435px) {
+
+    .mncontentpost h1 {
+        font-family: papyrus, "Englebert", cursive;
+    }
+
+    .mncontentpost h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        padding: 10px 25px;
+    }
+
+    .mncontentpost h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        padding: 10px 18px;
+        padding-bottom: 50px;
+    }
+
+    .mncontentpost h3 li {
+        padding: 4px;
+        text-align: left;
+    }
+
+    .alert {
+        padding: 5px 32px;
+        font-family: 'Comic Neue', cursive;
+        color: white;
+        font-size: 20px;
+        opacity: 1;
+        transition: opacity 0.6s;
+        text-align: center;
+    }
+
+    .theopyt {
+        border-radius: 40px;
+        padding: 10px 5px;
+        width: 93vw;
+        height: 27vh;
+        margin-bottom: 20px;
+    }
+
+    .theoptel img {
+        text-align: center;
+        width: 93%;
+        border-radius: 60px;
+        padding: 0px 0px;
+        margin-top: -19px;
+        margin-right: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cardpost h3 {
+        text-align: center;
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 395px) {
+
+    .maincontent {
+        overflow-y: scroll;
+        max-height: 88dvh;
+    }
+
+    .mncontentpost {
+        width: 95dvw;
+    }
+
+    .downbut {
+        width: 99vw;
+        text-align: center;
+        padding: 35px 0px;
+    }
+
+    .downbut h3 a {
+        font-size: 23px;
+    }
+
+    .theopyt {
+        border-radius: 40px;
+        padding: 10px 5px;
+        width: 90vw;
+        height: 25vh;
+        margin-bottom: 20px;
+    }
+
+    .theoptel img {
+        text-align: center;
+        width: 93%;
+        border-radius: 60px;
+        padding: 0px 0px;
+        margin-top: -19px;
+        margin-right: 16px;
+        margin-bottom: 20px;
+    }
+
+    .relcard {
+        margin: 5px 3px;
+        gap: 9px;
+    }
+
+    .relcard a:hover {
+        text-decoration: none;
+        color: #B0E3FF;
+        transition: all .2s;
+    }
+
+}

@@ -1,0 +1,212 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3049e890e9.js" crossorigin="anonymous"></script>
+    {% block upper %}
+    {% endblock %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'theonlinepopcorn/favicon.ico' %}" />
+</head>
+
+<body>
+    <div class="container flex bg-black ">
+        <div class="left">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="homebox">
+                <div class="home bg-grey rounded m-1 p-1">
+                    <div class="logo">
+                        <ul>
+                            <!-- <li class=""><img src="" alt="home"></li> -->
+                            <li class=""><a href="{% url 'index' %}"><img
+                                        src="{% static 'theonlinepopcorn/theopi.png' %}" alt="home"></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.youtube.com/@TheOnlinePopcorn-movies"><i class="fa-brands fa-youtube"
+                                id="youtube"></i></a>
+                        <a href="https://telegram.me/TheOnlinePopcornTOP"><i class="fa-brands fa-telegram"
+                                id="telegram"></i></a>
+                        <a href="https://www.tiktok.com/@theonlinepopcorn"><i class="fa-brands fa-tiktok"
+                                id="tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="librarybox">
+                <div class="library bg-grey rounded m-1 p-2">
+                    <div class="heading">
+                        <!-- <img src="wishlist.svg" alt=""> -->
+                        <h2>
+                            <a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a>
+                        </h2>
+
+                    </div>
+
+                    <div class="categ">
+                        <a href="{% url 'anime' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Anime</h2>
+                        </a>
+                        <hr size="1">
+                        <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}" alt="">
+                            Films</h2>
+                        <hr size="1">
+                        <!-- <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Genre</h2>
+                        <hr size="1"> -->
+                        <ul class="dropdown">
+                            <li>
+                                <a href="{% url 'action' %}">
+                                    <h3>Action</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'adventure' %}">
+                                    <h3>Adventure</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'animated' %}">
+                                    <h3>Animated</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'comedy' %}">
+                                    <h3>Comedy</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'crime' %}">
+                                    <h3>Crime</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'fantasy' %}">
+                                    <h3>Fantasy</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'mystery' %}">
+                                    <h3>Mystery</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'scifi' %}">
+                                    <h3>Sci-Fi</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'romance' %}">
+                                    <h3>Romance</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'thriller' %}">
+                                    <h3>Thriller</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'documentary' %}">
+                                    <h3>Documentary</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="{% url 'series' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Series</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="{% url 'tvshows' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> TV Show</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="{% url 'year' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Year</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="https://theprogamerguyz.web.app/">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> TheProGamerGuy</h2>
+                        </a>
+                    </div>
+
+                    <div class="footer">
+                        <p>
+                            <a href="{% url 'cookies' %}"><span>Cookies</span></a>
+                            <a href="{% url 'about-us' %}"><span>About Us</span></a>
+                            <a href="{% url 'privacy-policy' %}"><span>Privacy Policy</span></a>
+                            <a href="{% url 'terms-conditions' %}"><span>Terms & Conditions</span></a>
+                            <a href="{% url 'contact-us' %}"><span>Contact Us</span></a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right border bg-grey rounded">
+
+            <div class="topnav">
+
+                <div class="hamburger">
+                    <i class="fa-solid fa-burger fa-xl"></i>
+                </div>
+
+                {% block search %}
+                <a href="{% url 'search-page' %}">
+                    <button class="submit"> <i class="fa fa-search"> </i>
+                    </button>
+                </a>
+                {% endblock %}
+
+                <div class="topnotch">
+                    <h2>TheOnlinePopcorn</h2>
+                </div>
+
+                <div class="snowfall">
+                    <button id="fall" onclick="hidenshow()" style="cursor: pointer;"><img
+                            src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-vector-snow-flake-icon-png-image_4946051.jpg"
+                            alt=""></button>
+                </div>
+
+            </div>
+
+            <div class="maincontent">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            {% block thankyou %}
+            <div class="thankyou"><a href="{% url 'index' %}"> ©TheOnlinePopcorn🍿</a> | Made with Butter 😋</div>
+            {% endblock %}
+
+        </div>
+    </div>
+
+    <div>
+        <div id="starry" class="stars">
+            <div class="stars-01"></div>
+            <div class="stars-02"></div>
+            <div class="stars-03"></div>
+            <div class="stars-04"></div>
+        </div>
+    </div>
+
+    <script src="{% static 'theonlinepopcorn/show.js' %}"></script>
+    <script src="{% static 'theonlinepopcorn/starry.js' %}"></script>
+
+    {% block ripped %}
+    {% endblock %}
+
+</body>
+
+</html>

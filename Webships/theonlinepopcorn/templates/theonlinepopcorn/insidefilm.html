@@ -1,0 +1,351 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3049e890e9.js" crossorigin="anonymous"></script>
+    {% block upper %}
+    {% endblock %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'theonlinepopcorn/favicon.ico' %}" />
+</head>
+
+<body>
+    <div class="container flex bg-black ">
+        <div class="left">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="homebox">
+                <div class="home bg-grey rounded m-1 p-1">
+                    <div class="logo">
+                        <ul>
+                            <!-- <li class=""><img src="" alt="home"></li> -->
+                            <li class=""><a href="{% url 'index' %}"><img
+                                        src="{% static 'theonlinepopcorn/theopi.png' %}" alt="home"></a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.youtube.com/@TheOnlinePopcorn-movies"><i class="fa-brands fa-youtube"
+                                id="youtube"></i></a>
+                        <a href="https://telegram.me/TheOnlinePopcornTOP"><i class="fa-brands fa-telegram"
+                                id="telegram"></i></a>
+                        <a href="https://www.tiktok.com/@theonlinepopcorn"><i class="fa-brands fa-tiktok"
+                                id="tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="librarybox">
+                <div class="library bg-grey rounded m-1 p-2">
+                    <div class="heading">
+                        <!-- <img src="wishlist.svg" alt=""> -->
+                        <h2>
+                            <a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a>
+                        </h2>
+
+                    </div>
+
+                    <div class="categ">
+                        <a href="{% url 'anime' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Anime</h2>
+                        </a>
+                        <hr size="1">
+                        <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}" alt="">
+                            Films</h2>
+                        <hr size="1">
+                        <!-- <h2> <img class="invert" width="17px" src="popcorn.svg" alt=""> Genre</h2>
+                        <hr size="1"> -->
+                        <ul class="dropdown">
+                            <li>
+                                <a href="{% url 'action' %}">
+                                    <h3>Action</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'adventure' %}">
+                                    <h3>Adventure</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'animated' %}">
+                                    <h3>Animated</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'comedy' %}">
+                                    <h3>Comedy</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'crime' %}">
+                                    <h3>Crime</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'fantasy' %}">
+                                    <h3>Fantasy</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'mystery' %}">
+                                    <h3>Mystery</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'scifi' %}">
+                                    <h3>Sci-Fi</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'romance' %}">
+                                    <h3>Romance</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'thriller' %}">
+                                    <h3>Thriller</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'documentary' %}">
+                                    <h3>Documentary</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="{% url 'series' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Series</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="{% url 'tvshows' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> TV Show</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="{% url 'year' %}">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> Year</h2>
+                        </a>
+                        <hr size="1">
+                        <a href="https://theprogamerguyz.web.app/">
+                            <h2> <img class="invert" width="17px" src="{% static 'theonlinepopcorn/popcorn.svg' %}"
+                                    alt=""> TheProGamerGuy</h2>
+                        </a>
+                    </div>
+
+                    <div class="footer">
+                        <p>
+                            <a href="{% url 'cookies' %}"><span>Cookies</span></a>
+                            <a href="{% url 'about-us' %}"><span>About Us</span></a>
+                            <a href="{% url 'privacy-policy' %}"><span>Privacy Policy</span></a>
+                            <a href="{% url 'terms-conditions' %}"><span>Terms & Conditions</span></a>
+                            <a href="{% url 'contact-us' %}"><span>Contact Us</span></a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right border bg-grey rounded">
+
+            <div class="topnav">
+
+                <div class="hamburger">
+                    <i class="fa-solid fa-burger fa-xl"></i>
+                </div>
+
+                {% block search %}
+                <a href="{% url 'search-page' %}">
+                    <button class="submit"> <i class="fa fa-search"> </i>
+                    </button>
+                </a>
+                {% endblock %}
+
+                <div class="topnotch">
+                    <h2>TheOnlinePopcorn</h2>
+                </div>
+
+                <div class="snowfall">
+                    <button id="fall" onclick="hidenshow()" style="cursor: pointer;"><img
+                            src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-vector-snow-flake-icon-png-image_4946051.jpg"
+                            alt=""></button>
+                </div>
+
+            </div>
+
+            <div class="maincontent">
+                <div class="mncontentpost">
+                    {% block content %}
+                    {% endblock %}
+
+                    <div class="downbut theoptel">
+                        <a href="https://telegram.me/TheOnlinePopcornTOP"> <img
+                                src="{% static 'theonlinepopcorn/theoptel.png' %}" alt="">
+                        </a>
+                    </div>
+
+                    <div class="alertsec">
+
+                        <div class="alert info">
+                            <span class="closebtn">&times;</span>
+                            <h4> Join TheOnlinePopcorn telegram channel for all files! </h4>
+                        </div>
+
+                        <div class="alert success">
+                            <span class="closebtn">&times;</span>
+                            <h4> Subscribe TheOnlinePopcorn on youtube to get new vidoes & passcodes! </h4>
+                        </div>
+
+                        <div class="alert warning">
+                            <span class="closebtn">&times;</span>
+                            <h4> For any queries ask in TheOnlinePopcorn's telegram. </h4>
+                        </div>
+
+                        <div class="alert friendship">
+                            <span class="closebtn">&times;</span>
+                            <h4> For any request comment on TheOnlinePopcorn's youtube. </h4>
+                        </div>
+
+                    </div>
+
+                    <hr class="ispace" width="92%">
+
+                    <h2> A Few More Films... </h2>
+
+                    <div class="relcard">
+                        <a href="my-girl-1991">
+                            <div class="cardpost">
+                                <img src="https://i.ibb.co/rM1dCDV/9c9f777d-9c3b-42d9-9e22-d611af8a.png" alt="">
+                                <h3>My Girl (1991)</h3>
+                            </div>
+                        </a>
+                        <a href="the-smurfs-2011">
+                            <div class="cardpost">
+                                <img src="https://i.ibb.co/vD2xLcy/81unx-GLXx-L-AC-UF894-1000-QL80.jpg" alt="">
+                                <h3>The Smurfs (2011)</h3>
+                            </div>
+                        </a>
+                        <a href="harry-potter-and-the-philosophers-stone-2001">
+                            <div class="cardpost">
+                                <img src="https://i.ibb.co/2Yf88J4/NINTCHDBPICT000200255766.png" alt="">
+                                <h3>Harry Potter (2001)</h3>
+                            </div>
+                        </a>
+                        <a href="the-boy-the-mole-the-fox-and-the-horse-2022">
+                            <div class="cardpost">
+                                <img src="https://i.ibb.co/ChG2mzw/MV5-BYTMy-Zj-Uw-Njkt-Yj-Uz-NC00-Yz-Nh-LWI4.jpg"
+                                    alt="">
+                                <h3>The Boy, the Mole, the Fox and the Horse (2022)</h3>
+                            </div>
+                        </a>
+                        <a href="taare-zameen-par-2007">
+                            <div class="cardpost">
+                                <img src="https://i.ibb.co/SrKTqTQ/thumb.jpg" alt="">
+                                <h3>Taare Zameen Par (2007)</h3>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="hags">
+
+                    <div class="unsocial">
+                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+
+                    <div class="glowbutt">
+                        <a href="https://www.youtube.com/@TheOnlinePopcorn/shorts">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i id="glowybutt gyt" class="fa-brands fa-youtube">
+                                TheOnlinePopcorn</i>
+                        </a>
+                        <div class="ispace2"></div>
+                        <a href="https://telegram.me/TheOnlinePopcornEdits">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fa-brands fa-telegram">
+                                TheOnlinePopcorn</i>
+                        </a>
+                    </div>
+
+                    <div class="ispace2"></div>
+
+                    <div class="cloudword">
+                        <a href="scifi">Sci-fi</a>
+                        <a href="romance"><span class="cloudword0">Romance</span></a>
+                        <a href="adventure"><span class="cloudword1">Adventure</span></a>
+                        <a href="wannabehumans.web.app"><span class="cloudword3">WannaBeHumans</span></a>
+                        <a href="horror">Horror</a>
+                        <a href="mystery"><span class="cloudword0">Mystery</span></a>
+                        <a href="fantasy"><span class="cloudword2">Fantasy</span></a>
+                        <a href="thebeautieduntranquility.web.app"><span
+                                class="cloudword2">TheBeautiedUntranquility</span></a>
+                        <a href="cozy"><span class="cloudword2">Cozy</span></a>
+                        <a href="eunoia"><span class="">Eunoia</span></a>
+                        <a href="serendipity"><span class="cloudword1">Serendipity</span></a>
+                        <a href="aurora"><span class="cloudword0">Aurora</span></a>
+                        <a href="hiraeth"><span class="">Hiraeth</span></a>
+                        <a href="yugen">Yūgen</a>
+                        <a href="loveandlabyrinth.web.app"><span class="cloudword2">LoveAndLabyrinth</span></a>
+                        <a href="reverie"><span class="cloudword1">Reverie</span></a>
+                        <a href="melancholy">Melancholy</a>
+                        <a href="her"><span class="cloudword0">HER</span></a>
+                        <a href="lacuna"><span class="cloudword2">Lacuna</span></a>
+                        <a href="fika"><span class="cloudword1">Fika</span></a>
+                        <a href="euphoria"><span class="cloudword2">Euphoria</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% block thankyou %}
+            <div class="thankyou"><a href="{% url 'index' %}"> ©TheOnlinePopcorn🍿</a> | Made with Butter 😋</div>
+            {% endblock %}
+
+        </div>
+    </div>
+
+    <div>
+        <div id="starry" class="stars">
+            <div class="stars-01"></div>
+            <div class="stars-02"></div>
+            <div class="stars-03"></div>
+            <div class="stars-04"></div>
+        </div>
+    </div>
+
+    <script src="{% static 'theonlinepopcorn/show.js' %}"></script>
+    <script src="{% static 'theonlinepopcorn/starry.js' %}"></script>
+
+
+    <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function () { div.style.display = "none"; }, 600);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

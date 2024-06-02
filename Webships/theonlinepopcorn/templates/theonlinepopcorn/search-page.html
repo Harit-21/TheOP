@@ -1,0 +1,116 @@
+{% extends "theonlinepopcorn/leftlayout.html" %}
+{% load static %}
+
+{% block upper %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="{% static 'theonlinepopcorn/search.css' %}">
+<link rel="stylesheet" href="{% static 'theonlinepopcorn/utility.css' %}">
+<link rel="stylesheet" href="{% static 'theonlinepopcorn/starry.css' %}">
+<title>Looking for LIFE!👀</title>
+{% endblock %}
+
+{% block search %}
+<div class="search-bar">
+    <input type="text" id="find" name="" class="input" placeholder="Search for LIFE..."
+        onkeyup="search()" />
+    <button class="submit"> <i class="fa fa-search" aria-label="submit search"> </i> </button>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="filmWare">
+        <div class="cardContainer" id="cardContainer">
+            <a href="the-idea-of-you-2024" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/fvnksjj/MV5-BYWRk-Zj-Ji-ODEt-M2-Iw-Zi00-Zj-M1-LWEy.jpg" alt="">
+                    <h3>The Idea of You (2024)</h3>
+                </div>
+            </a>
+            <a href="Mission-Impossible-7-Dead-Reckoning-Part-One-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/Zhs3dKZ/image.jpg" alt="">
+                    <h3>Mission: Impossible</h3>
+                    <p>Dead Reckoning Part One (2023)</p>
+                </div>
+            </a>
+            <a href="Barbie-2023" id="Barbie" title="Barbie" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/Rjmqk9c/barbie.jpg" alt="">
+                    <h3>Barbie (2023)</h3>
+
+                </div>
+            </a>
+            <a href="dark" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/Y2ShWtj/dark-111203947-large.jpg" alt="">
+                    <h3>Dark (2017)</h3>
+                </div>
+            </a>
+            <a href="Fair-Play-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/sVrnQRL/MV5-BYTky-NGVi-Mm-Qt-ODgx-ZS00-MDg3-LWI2.jpg" alt="">
+                    <h3>Fair Play (2023)</h3>
+
+                </div>
+            </a>
+            <a href="500-Days-Of-Summer-2009" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/HBjcX98/DIPGXBOTXFGHLFTS6-N3-R4-AQZYA.png" alt="">
+                    <h3>500 Days of Summer (2009)</h3>
+
+                </div>
+            </a>
+            <a href="Burning-Betrayal-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/Np2qkK9/giovanna-lancellotti-burning-bet.jpg" alt="">
+                    <h3>Burning Betrayal (2023)</h3>
+
+                </div>
+            </a>
+            <a href="Evil-Dead-Rise-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/KDRKWDp/MV5-BMm-Zi-N2-Vm-Mjkt-ZDE5-OC00-ZWRm-LWFl.jpg" alt="">
+                    <h3>Evil Dead Rise (2023)</h3>
+
+                </div>
+            </a>
+            <a href="Before-Sunrise-1995" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/dmxvsfC/M8-DBESU-EC009.png" alt="">
+                    <h3>Before Sunrise (1995)</h3>
+
+                </div>
+            </a>
+            <a href="Before-Midnight-2013" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/TMpZK6g/before-midnight-stills-wallpaper.jpg" alt="">
+                    <h3>Before Midnight (2013)</h3>
+
+                </div>
+            </a>
+            <a href="Red-White-And-Royal-Blue-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/mb1cvJv/RWRB-2023-Digital-One-Sheet-Lake-2.png" alt="">
+                    <h3>Red, White & Royal Blue (2023)</h3>
+
+                </div>
+            </a>
+            <a href="After-Everything-2023" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/GT47RFB/eb3d53e2bc1ee2ce6bd91c03b37135d8.jpg" alt="">
+                    <h3>After Everything (2023)</h3>
+
+                </div>
+            </a>
+            <a href="Game-Of-Thrones-S1-E1" class="filmchoice">
+                <div class="card">
+                    <img src="https://i.ibb.co/Pj013dX/792342-cool-emilia-clarke-game-o.jpg" alt="">
+                    <h3>Game Of Thrones (2011)</h3>
+                    <p>Season-1 Episode 1</p>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+{% endblock %}
